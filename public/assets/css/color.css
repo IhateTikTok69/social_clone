@@ -1,0 +1,104 @@
+html {
+    --bg-color: #313338;
+    --input-color: #14151a;
+    --server-color: #1E1F22;
+    --chat-input-color: #383A40;
+    --idk-color: #232428;
+    --channel-color: #2B2D31;
+    --chat-color: #313338;
+    --selected-color: #414349;
+    --horline-color: #3F4148;
+    --menu-color: #949BA4;
+    --danger-color: #f10000;
+    --primary-color: #0015ff;
+    --success-color: #01860c;
+    --my-white: #e9e9e9;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    /* for Chrome, Safari, and Opera */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    /* color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--server-color);
+    /* color of the scroll thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* color of the scroll thumb on hover */
+}
+
+hr {
+    border-top: 1px solid var(--horline-color);
+}
+
+.color-white {
+    color: var(--my-white);
+}
+
+.input-bg {
+    background-color: var(--input-color);
+}
+
+.hover\:selected-bg:hover {
+    background-color: var(--selected-color);
+}
+
+.selected-bg {
+    background-color: var(--selected-color);
+}
+
+.server-bg {
+    background-color: var(--server-color);
+}
+
+.primary-bg {
+    background-color: var(--primary-color);
+}
+
+.channel-bg {
+    background-color: var(--channel-color);
+}
+
+.menu-text {
+    color: var(--menu-color);
+}
+
+.success-text {
+    color: var(--success-color);
+}
+
+#custom-menu {
+    background-color: var(--input-color);
+    width: 190px;
+    height: fit-content;
+    border-radius: 5px;
+    position: fixed;
+    padding: 5px;
+    z-index: 5;
+}
+
+#custom-menu>a {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#custom-menu>a:hover {
+    background-color: #4752C4;
+    color: white;
+    border-radius: 2px;
+}

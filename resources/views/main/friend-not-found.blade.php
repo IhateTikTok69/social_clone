@@ -1,0 +1,1 @@
+<p class="text-blue-500">You currently have <b>{{$status}}</b> status with this user</p>

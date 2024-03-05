@@ -1,0 +1,128 @@
+body {
+    background-color: var(--bg-color);
+}
+
+.server-selector {
+    width: 70px;
+    background-color: var(--server-color);
+    height: 100vh;
+}
+
+.button-list>button,
+.add-friend {
+    margin-left: 5px;
+    margin-top: 2px;
+    padding: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button-list>button:hover,
+.button-list>a:hover {
+    background-color: var(--selected-color);
+    color: white;
+    border-radius: 2px;
+}
+
+
+.add-friend,
+.add-friend:hover {
+    background-color: var(--success-color);
+    color: white;
+    border-radius: 2px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    margin-left: 70px;
+    height: 48px;
+    width: calc(100% - 70px);
+    box-shadow: 0px 3px 3px -2px #161616a8;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: 240px calc(100vw - 310px);
+}
+
+.channel-selector {
+    margin-left: 70px;
+    margin-top: 4px;
+    background-color: var(--channel-color);
+    height: calc(100vh - 52px);
+    z-index: 1;
+}
+
+.main-content {
+    margin-left: 310px;
+    width: calc(100% - 310px);
+    height: calc(100vh - 52px);
+}
+
+.quick-transition {
+    transition: all ease 50ms;
+}
+
+.expand {
+    display: grid;
+    grid-template-columns: calc(100% - 340px) 340px;
+}
+
+.colapse {
+    display: block;
+}
+
+.profile-area {
+    border-left: 1px solid var(--horline-color);
+}
+
+@media screen and (max-width: 1120px) {
+    .expand {
+        display: block;
+    }
+
+    .profile-area {
+        display: none;
+    }
+}
+
+.user-profile-area {
+    height: 53px;
+    bottom: 0px;
+    z-index: 4;
+    left: 70px;
+    background-color: var(--idk-color);
+}
+
+.user-profile-area>img {
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        margin-left: 0px;
+        width: 100%;
+        grid-template-columns: 40px 100%;
+    }
+
+    .add-friend {
+        display: none;
+    }
+
+    .part-2 {
+        display: none;
+    }
+
+    .channel-selector {
+        left: -330px;
+    }
+
+    .server-selector {
+        left: -70px;
+    }
+}

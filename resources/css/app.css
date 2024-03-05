@@ -1,0 +1,25 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'myFont';
+    src: url("/public/assets/font/ggsans-Normal.ttf");
+}
+
+.with-border {
+    border-radius: 2px;
+}
+
+body {
+    font-family: 'myFont';
+}
+
+select {
+    padding: 10px;
+    display: block;
+}
